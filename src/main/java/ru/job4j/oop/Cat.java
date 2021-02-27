@@ -6,11 +6,11 @@ public class Cat {
     private String name;
 
     public void giveNick(String nick){
-
+        this.name = nick;
     }
 
     public void show() {
-        System.out.println(this.food);
+        System.out.println(this.name + this.food);
     }
 
     public void eat(String meat) {
@@ -18,15 +18,14 @@ public class Cat {
     }
 
     public static void main(String[] args) {
-        System.out.println("There are gav's food.");
         Cat gav = new Cat();
         gav.eat("kotleta");
+        gav.giveNick("gav ");
         gav.show();
         gav.eat("kotleta");
-        System.out.println("There are black's food.");
         Cat black = new Cat();
         black.eat("fish");
+        black.giveNick("black ");
         black.show();
-
     }
 }
