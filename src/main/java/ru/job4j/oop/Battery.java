@@ -6,12 +6,12 @@ public class Battery {
         this.load = size;
     }
     public void exchange(Battery another){
-        this.load = this.load - another.load;
+        this.load = another.load + this.load;
         another.load = 0;
     }
     public static void main(String[] args) {
-        Battery first = new Battery(100);
+        Battery first = new Battery(89);
         Battery second = new Battery(1);
-        first.exchange(second);
+        second.exchange(first);
     }
 }
