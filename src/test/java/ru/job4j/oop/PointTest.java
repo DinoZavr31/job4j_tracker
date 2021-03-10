@@ -15,4 +15,12 @@ public class PointTest {
         double rsl = a.distance(b);
         assertThat(rsl, closeTo(4, 0.001));
     }
+
+    @Test
+    public void distance3d() {
+        Point c = new Point(0, 0, 0);
+        Point d = new Point(0, 0, 0);
+        double rsl = c.distance(d);
+        assertThat(rsl, closeTo(0, 0.001));
+    }
 }
