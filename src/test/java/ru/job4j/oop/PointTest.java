@@ -20,7 +20,23 @@ public class PointTest {
     public void distance3d() {
         Point c = new Point(0, 0, 0);
         Point d = new Point(0, 0, 0);
-        double rsl = c.distance(d);
+        double rsl = c.distance3d(d);
         assertThat(rsl, closeTo(0, 0.001));
+    }
+
+    @Test
+    public void distance3d1() {
+        Point c = new Point(0, 0, 0);
+        Point d = new Point(0, 2, 0);
+        double rsl = c.distance3d(d);
+        assertThat(rsl, closeTo(2, 0.001));
+    }
+
+    @Test
+    public void distance3d2() {
+        Point c = new Point(0, 0, 0);
+        Point d = new Point(0, 0, 4);
+        double rsl = c.distance3d(d);
+        assertThat(rsl, closeTo(4, 0.001));
     }
 }
