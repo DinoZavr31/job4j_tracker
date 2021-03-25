@@ -9,10 +9,6 @@ public class Doctor extends Profession {
     public String getContraindication() { return contraindication; }
     public String getTherapy() { return therapy; }
 
-    public Doctor() {
-        super();
-    }
-
     public Doctor(String name, String surname, String education, String birthday, String diagnosis, String contraindication, String therapy) {
         super(name, surname, education, birthday);
         this.diagnosis = diagnosis;

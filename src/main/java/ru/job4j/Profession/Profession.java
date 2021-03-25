@@ -11,8 +11,6 @@ public class Profession {
         public String getEducation () { return education; }
         public String getBirthday () { return birthday; }
 
-        public Profession(){}
-
         public Profession(String name, String surname, String education, String birthday) {
             this.name = name;
             this.surname = surname;

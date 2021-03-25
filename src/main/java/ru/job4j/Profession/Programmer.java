@@ -5,9 +5,6 @@ public class Programmer extends Ingineer {
 
     public String getCompleting() { return completing; }
 
-    public Programmer(){
-        super();
-    }
     public Programmer(String name, String surname, String education, String birthday, String planning, String calculation, String test, String completing) {
         super(name, surname, education, birthday, planning, calculation, test);
         this.completing = completing;

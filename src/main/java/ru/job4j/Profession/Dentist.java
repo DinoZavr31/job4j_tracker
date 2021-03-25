@@ -5,9 +5,6 @@ public class Dentist extends Doctor {
 
     public String getProcedure() { return procedure;}
 
-    public Dentist(){
-        super();
-    }
     public Dentist(String name, String surname, String education, String birthday, String diagnosis, String contraindication, String therapy, String procedure) {
         super(name, surname, education, birthday, diagnosis, contraindication, therapy);
         this.procedure = procedure;

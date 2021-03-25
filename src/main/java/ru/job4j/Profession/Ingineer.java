@@ -9,10 +9,6 @@ public class Ingineer extends Profession {
     public String getCalculation() { return calculation; }
     public String getTest() { return test; }
 
-    public Ingineer(){
-        super();
-    }
-
     public Ingineer(String name, String surname, String education, String birthday, String planning, String calculation, String test) {
         super(name, surname, education, birthday);
         this.planning = planning;
