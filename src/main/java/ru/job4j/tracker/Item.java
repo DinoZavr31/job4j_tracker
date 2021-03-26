@@ -7,8 +7,14 @@ public class Item {
     private LocalDateTime created = LocalDateTime.now();
 
     public Item() {}
+
     public Item(int id) {
         this.id = id;
+    }
+
+    public Item(int id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     @Override
@@ -18,11 +24,6 @@ public class Item {
                 ", name='" + name + '\'' +
                 ", created=" + created +
                 '}';
-    }
-
-    public Item(int id, String name) {
-        this.id = id;
-        this.name = name;
     }
 
     public LocalDateTime getCreated() {
@@ -44,4 +45,5 @@ public class Item {
     public void setName(String name) {
         this.name = name;
     }
+
 }
