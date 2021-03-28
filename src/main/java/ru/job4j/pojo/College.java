@@ -9,7 +9,8 @@ public class College {
         student.setMiddleName("Nailevich ");
         student.setGroup("job4j");
         student.setCreated(new Date());
-        System.out.println(student.getLastName() + student.getFirstName() + student.getMiddleName() + ": group - " + student.getGroup() + ", date - " + student.getCreated());
-
+        System.out.println(student.getLastName() + student.getFirstName()
+                + student.getMiddleName() + ": group - " + student.getGroup()
+                + ", date - " + student.getCreated());
     }
 }
