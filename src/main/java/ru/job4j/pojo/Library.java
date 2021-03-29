@@ -25,10 +25,10 @@ public class Library {
         }
         System.out.println("Добавьте цикл с выводом книг с именем Clean code");
         for (int index = 0; index < lib.length; index++) {
-            Book search = new Book("Clean code", 300);
             Book coll = lib[index];
-            if (search.equals(coll)){
-                System.out.println(coll.getName() + " - " + coll.getCount());
+            String s = "Clean code";
+            if (s.equals(coll.getName())){
+                System.out.println(coll.getName());
             }
         }
     }
